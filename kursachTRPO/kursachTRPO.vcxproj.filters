@@ -13,12 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\Persist">
+      <UniqueIdentifier>{c1450fdb-bd5f-47f5-8e82-4f1e19a842e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Models">
+      <UniqueIdentifier>{07675966-6ac5-4ca2-994a-a3b8f7928602}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyForm.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="authForm.cpp">
+    <ClCompile Include="AdminPanel.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientPanel.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="BuyTicketForm.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,7 +38,25 @@
     <ClInclude Include="MyForm.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="authForm.h">
+    <ClInclude Include="SQLHandler.h">
+      <Filter>Файлы заголовков\Persist</Filter>
+    </ClInclude>
+    <ClInclude Include="Transport.h">
+      <Filter>Файлы заголовков\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Файлы заголовков\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Сruise.h">
+      <Filter>Файлы заголовков\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AdminPanel.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientPanel.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="BuyTicketForm.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

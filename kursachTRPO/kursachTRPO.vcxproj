@@ -118,18 +118,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="authForm.cpp" />
+    <ClCompile Include="AdminPanel.cpp" />
+    <ClCompile Include="BuyTicketForm.cpp" />
+    <ClCompile Include="ClientPanel.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="authForm.h">
+    <ClInclude Include="AdminPanel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="BuyTicketForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ClientPanel.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="SQLHandler.h" />
+    <ClInclude Include="Transport.h" />
+    <ClInclude Include="Сruise.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyTicketForm.resx">
+      <DependentUpon>BuyTicketForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientPanel.resx">
+      <DependentUpon>ClientPanel.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
     </EmbeddedResource>

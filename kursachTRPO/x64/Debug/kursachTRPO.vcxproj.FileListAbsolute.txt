@@ -1,0 +1,6 @@
+C:\Users\Ivan\source\repos\kursachTRPO\kursachTRPO\x64\Debug\kursachTRPO.AdminPanel.resources
+C:\Users\Ivan\source\repos\kursachTRPO\kursachTRPO\x64\Debug\kursachTRPO.BuyTicketForm.resources
+C:\Users\Ivan\source\repos\kursachTRPO\kursachTRPO\x64\Debug\kursachTRPO.ClientPanel.resources
+C:\Users\Ivan\source\repos\kursachTRPO\kursachTRPO\x64\Debug\kursachTRPO.MyForm.resources
+C:\Users\Ivan\source\repos\kursachTRPO\kursachTRPO\x64\Debug\kursachTRPO.vcxproj.GenerateResource.cache
+C:\Users\Ivan\source\repos\kursachTRPO\kursachTRPO\x64\Debug\kursachTRPO.vcxprojAssemblyReference.cache
