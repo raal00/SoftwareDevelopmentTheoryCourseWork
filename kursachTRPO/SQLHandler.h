@@ -139,7 +139,7 @@ namespace Persist {
 		bool BuyTicket(int cruiseid) {
 			if (isConnected == false) connect();
 			SqlCommand^ command = gcnew SqlCommand();
-			command->CommandText = "UPDATE dbo.[Ñruise] SET [Ñruise].PrivateSpace = [Ñruise].PrivateSpace + 1 WHERE Id = "+cruiseid;
+			command->CommandText = "UPDATE dbo.[Ñruise] SET [Ñruise].PrivateSpace = [Ñruise].PrivateSpace + 1 WHERE Id = "+ cruiseid;
 			command->Connection = connection;
 
 			int compleate = command->ExecuteNonQuery();

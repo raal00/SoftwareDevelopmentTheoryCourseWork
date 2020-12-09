@@ -51,6 +51,7 @@ namespace kursachTRPO {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(ClientPanel::typeid));
 			this->listBoxCruises = (gcnew System::Windows::Forms::ListBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->btnShowAll = (gcnew System::Windows::Forms::Button());
@@ -59,56 +60,77 @@ namespace kursachTRPO {
 			// 
 			// listBoxCruises
 			// 
+			this->listBoxCruises->BackColor = System::Drawing::Color::DarkSlateGray;
+			this->listBoxCruises->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->listBoxCruises->Dock = System::Windows::Forms::DockStyle::Top;
-			this->listBoxCruises->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->listBoxCruises->Font = (gcnew System::Drawing::Font(L"Gothic3", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->listBoxCruises->ForeColor = System::Drawing::Color::Fuchsia;
 			this->listBoxCruises->FormattingEnabled = true;
+			this->listBoxCruises->ItemHeight = 14;
 			this->listBoxCruises->Location = System::Drawing::Point(0, 0);
 			this->listBoxCruises->Name = L"listBoxCruises";
-			this->listBoxCruises->Size = System::Drawing::Size(1284, 446);
+			this->listBoxCruises->Size = System::Drawing::Size(1264, 336);
 			this->listBoxCruises->TabIndex = 0;
 			this->listBoxCruises->SelectedIndexChanged += gcnew System::EventHandler(this, &ClientPanel::listBoxCruises_SelectedIndexChanged);
 			// 
 			// comboBox1
 			// 
+			this->comboBox1->BackColor = System::Drawing::Color::DarkSlateGray;
+			this->comboBox1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->comboBox1->Font = (gcnew System::Drawing::Font(L"Gothic3", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->comboBox1->ForeColor = System::Drawing::Color::Fuchsia;
 			this->comboBox1->FormattingEnabled = true;
 			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(5) { L"Moscow", L"Tver", L"Tula", L"NewYork", L"Tokio" });
-			this->comboBox1->Location = System::Drawing::Point(12, 452);
+			this->comboBox1->Location = System::Drawing::Point(12, 348);
 			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(218, 21);
+			this->comboBox1->Size = System::Drawing::Size(218, 27);
 			this->comboBox1->TabIndex = 1;
 			// 
 			// btnShowAll
 			// 
-			this->btnShowAll->Location = System::Drawing::Point(1081, 592);
+			this->btnShowAll->BackColor = System::Drawing::Color::DarkSlateGray;
+			this->btnShowAll->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->btnShowAll->Font = (gcnew System::Drawing::Font(L"Gothic3", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->btnShowAll->ForeColor = System::Drawing::Color::Magenta;
+			this->btnShowAll->Location = System::Drawing::Point(584, 389);
 			this->btnShowAll->Name = L"btnShowAll";
-			this->btnShowAll->Size = System::Drawing::Size(191, 35);
+			this->btnShowAll->Size = System::Drawing::Size(243, 35);
 			this->btnShowAll->TabIndex = 2;
 			this->btnShowAll->Text = L"Все рейсы";
-			this->btnShowAll->UseVisualStyleBackColor = true;
+			this->btnShowAll->UseVisualStyleBackColor = false;
 			this->btnShowAll->Click += gcnew System::EventHandler(this, &ClientPanel::btnShowAll_Click);
 			// 
 			// btnShowBest
 			// 
-			this->btnShowBest->Location = System::Drawing::Point(1081, 633);
+			this->btnShowBest->BackColor = System::Drawing::Color::DarkSlateGray;
+			this->btnShowBest->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->btnShowBest->Font = (gcnew System::Drawing::Font(L"Gothic3", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnShowBest->ForeColor = System::Drawing::Color::Magenta;
+			this->btnShowBest->Location = System::Drawing::Point(584, 348);
 			this->btnShowBest->Name = L"btnShowBest";
-			this->btnShowBest->Size = System::Drawing::Size(191, 35);
+			this->btnShowBest->Size = System::Drawing::Size(243, 35);
 			this->btnShowBest->TabIndex = 3;
 			this->btnShowBest->Text = L"Оптимальные рейсы";
-			this->btnShowBest->UseVisualStyleBackColor = true;
+			this->btnShowBest->UseVisualStyleBackColor = false;
 			this->btnShowBest->Click += gcnew System::EventHandler(this, &ClientPanel::btnShowBest_Click);
 			// 
 			// ClientPanel
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1284, 681);
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->ClientSize = System::Drawing::Size(1264, 681);
 			this->Controls->Add(this->btnShowBest);
 			this->Controls->Add(this->btnShowAll);
 			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->listBoxCruises);
-			this->MaximumSize = System::Drawing::Size(1300, 720);
-			this->MinimumSize = System::Drawing::Size(1300, 720);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::SizableToolWindow;
+			this->MaximumSize = System::Drawing::Size(1280, 720);
+			this->MinimumSize = System::Drawing::Size(1280, 720);
 			this->Name = L"ClientPanel";
 			this->Text = L"Панель клиента";
 			this->ResumeLayout(false);

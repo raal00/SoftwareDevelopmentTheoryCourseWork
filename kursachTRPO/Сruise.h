@@ -32,7 +32,7 @@ namespace Persist {
 			return "#" + Id + 
 				" \tОтправка: " + StartDate + "  \tПрибытие: " + EndDate
 				+ "  \tОсталось мест: " + spc
-				+ "  \tЦена: " + Price + " \t" 
+				+ "\t\tЦена: " + Price + "\t\t" 
 				+ Point->PointName + " \t"
 				+ Transport->TransportName;
 		}

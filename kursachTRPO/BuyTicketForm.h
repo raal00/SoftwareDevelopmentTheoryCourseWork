@@ -58,12 +58,13 @@ namespace kursachTRPO {
 			// 
 			// richTextBoxInfo
 			// 
+			this->richTextBoxInfo->BackColor = System::Drawing::Color::DarkSlateBlue;
 			this->richTextBoxInfo->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->richTextBoxInfo->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->richTextBoxInfo->Dock = System::Windows::Forms::DockStyle::Top;
-			this->richTextBoxInfo->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->richTextBoxInfo->Font = (gcnew System::Drawing::Font(L"Gothic3", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->richTextBoxInfo->ForeColor = System::Drawing::Color::ForestGreen;
+			this->richTextBoxInfo->ForeColor = System::Drawing::Color::Cyan;
 			this->richTextBoxInfo->Location = System::Drawing::Point(0, 0);
 			this->richTextBoxInfo->Name = L"richTextBoxInfo";
 			this->richTextBoxInfo->Size = System::Drawing::Size(784, 188);
@@ -72,23 +73,28 @@ namespace kursachTRPO {
 			// 
 			// buttonPay
 			// 
-			this->buttonPay->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->buttonPay->BackColor = System::Drawing::Color::Cyan;
+			this->buttonPay->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->buttonPay->Font = (gcnew System::Drawing::Font(L"Gothic3", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->buttonPay->ForeColor = System::Drawing::Color::DarkSlateBlue;
 			this->buttonPay->Location = System::Drawing::Point(12, 195);
 			this->buttonPay->Name = L"buttonPay";
 			this->buttonPay->Size = System::Drawing::Size(760, 54);
 			this->buttonPay->TabIndex = 1;
 			this->buttonPay->Text = L"Оплатить";
-			this->buttonPay->UseVisualStyleBackColor = true;
+			this->buttonPay->UseVisualStyleBackColor = false;
 			this->buttonPay->Click += gcnew System::EventHandler(this, &BuyTicketForm::buttonPay_Click);
 			// 
 			// BuyTicketForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::DarkSlateBlue;
 			this->ClientSize = System::Drawing::Size(784, 261);
 			this->Controls->Add(this->buttonPay);
 			this->Controls->Add(this->richTextBoxInfo);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::SizableToolWindow;
 			this->MaximumSize = System::Drawing::Size(800, 300);
 			this->MinimumSize = System::Drawing::Size(800, 300);
 			this->Name = L"BuyTicketForm";

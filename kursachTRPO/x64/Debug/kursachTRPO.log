@@ -1,4 +1,5 @@
-﻿  ClientPanel.cpp
+﻿  BuyTicketForm.cpp
+  ClientPanel.cpp
   MyForm.cpp
   Создание кода...
   AdminPanel.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
