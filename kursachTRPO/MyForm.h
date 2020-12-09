@@ -35,7 +35,7 @@ namespace kursachTRPO {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ button1;
+
 	protected:
 
 	private:
@@ -51,35 +51,22 @@ namespace kursachTRPO {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
-			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(297, 200);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(175, 69);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(807, 501);
-			this->Controls->Add(this->button1);
 			this->Name = L"MyForm";
 			this->Text = L"Транспортная система";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 
-		authForm auth;
-		auth.ShowDialog();
+	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
 }
